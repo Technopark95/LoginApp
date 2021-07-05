@@ -42,7 +42,7 @@ namespace LoginApp.Controllers
 
             Sign.FirstName = MyForm["firstname"];
             Sign.LastName = MyForm["lastname"];
-            Sign.Email = MyForm["email"];
+            Sign.Email = MyForm["email"]; 
             Sign.Password = MyForm["password"];
 
             Stream sr = Request.Files[0].InputStream;
