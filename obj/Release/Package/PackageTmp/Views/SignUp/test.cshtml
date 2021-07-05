@@ -1,0 +1,52 @@
+﻿@{
+    Layout = null;
+}
+
+
+<html>
+<head>
+    <title>Hello</title>
+
+    <style>
+
+
+        * {
+
+            font-family:'Century Gothic';
+        }
+
+    </style>
+</head>
+<body>
+
+ 
+    <div style="display:flex;flex-direction:row;justify-content:space-between;align-items:center;">
+
+        <img id="myimg" style="height:100px;width:100px;border-radius:100px;object-fit:cover;" />
+
+
+    </div>
+    <script>
+        
+
+        async function loadImage ()  {
+
+
+            let response = await fetch("http://localhost:55570/SignUp/Imagers");
+            let result = await response.blob();
+
+            let url = URL.createObjectURL(result);
+
+            document.getElementById("myimg").src = url;
+
+
+        }
+
+        loadImage();
+
+
+    </script>
+
+
+</body>
+</html>

@@ -1,0 +1,111 @@
+﻿* {
+    font-family: 'Century Gothic';
+}
+
+body {
+    margin:0;
+}
+
+.welcome {
+
+    font-size:200%;
+    color:white;
+    z-index:1;
+
+}
+
+
+#signout {
+
+    margin-top:50px;
+    padding:10px;
+    width:150px;
+    border-radius:100px;
+    background-color:white;
+    outline:none;
+    border:0;
+    font-size:130%;
+    z-index:1;
+
+}
+
+#signout:hover {
+
+    background-color:coral;
+    cursor:pointer;
+  
+}
+
+.overlay {
+
+
+    background-color:rgb(0 ,0 ,0 ,0.76);
+    position:absolute;
+    top:0;
+    left:0;
+    right:0;
+    bottom:0;
+    z-index:0;
+
+}
+
+
+.top-banner {
+
+    display:flex;
+    width:100%;
+    height:100%;
+    flex-direction:column;
+    position:relative;
+    align-items:center;
+    justify-content:center;
+    background-color:aliceblue;
+    background-image:url(../images/banner.jpg);
+
+}
+
+
+.labelcont {
+
+
+    text-align:center;
+    z-index:1;
+}
+
+   .photocont {
+
+	position: relative;
+	margin-top: 30px;
+	width: 100px;
+	height: 100px;
+	border-radius: 100%;
+	text-align: center;
+	overflow: hidden;
+
+  }
+
+  .photocont:hover > .picoverlay{
+
+	opacity: .8;
+
+  }
+
+  .photocont:hover > .uploadphoto{
+
+	visibility: visible;
+
+  }
+
+
+  .picoverlay {
+
+background-color: rgb(0, 0, 0);
+opacity: .2;
+position: absolute;
+top:0;
+left: 0;
+bottom: 0;
+right:0;
+transition: opacity 100ms linear;
+
+  }
